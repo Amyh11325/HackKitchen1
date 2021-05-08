@@ -20,6 +20,8 @@ function startCooking() {
         step_s__p_ = umbrella();
     }else if (count == 7) {
         step_s__p_ = boil();
+    }else if (count == 8) {
+        step_s__p_ = pork();
     }
     cook(step_s__p_);
 }
@@ -33,44 +35,56 @@ function cook(step_s__p_) {
 //|||||
 //function that gets you lemon juice
 function lemon() {
-    return "squeezing lemons";
+    return "squeezing lemons(在挤柠檬)";
+    document.write("\n");
 }
 
 //|||||
 //function that gets you lemon juice
 function water() {
-    return "adds in 2 cups of icy crisp water";
+    return "adding in 2 cups of icy crisp water（加2杯冷水） ";
+    document.write("<br>");
 }
 
 //|||||
 //function that adds in sugar
 function sugar() {
-    return "adding a healthy dose of sugar";
+    return "adding a healthy dose of sugar (加一点🤏糖) ";
+    document.write("<br>");
 }
 
 //|||||
 //function that mixes everything up
 function mix() {
-    return "mixing in sugar";
+    return "mixing in sugar (搅匀糖)";
+    document.write ("<br>");
 }
 
 //|||||
 //function that adds lemon aesthetic
 function lemonslice() {
-    return "adding a freshly cut lemon slice";
+    return "adding a freshly cut lemon slice (加柠檬片)";
+    document.write ("<br>");
 }
 
 //|||||
 //function that adds cute umbrella
 function umbrella() {
-    return "adding a cocktail umbrella to top things off!";
+    return "adding a cocktail umbrella to top things off! (加纸伞) ";
 }
 
 //|||||
 //function that adds starts the hotpot
 function boil() {
-    return "whatever the first step is";
+    return "adding water, salt, and pepper (加水, 盐和胡椒) ";
 }
+
+//|||||
+//function that adds starts the hotpot
+function pork() {
+    return "adding raw pork ";
+}
+
 
 //|||||
 //function that counts down recursively
