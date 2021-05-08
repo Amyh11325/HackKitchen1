@@ -26,8 +26,8 @@ function startCooking() {
 
 //|||||
 //function that adds to the step input
-function cook(step) {
-    document.body.append(step);
+function cook(step_s__p_) {
+    document.body.append(step_s__p_);
 }
 
 //|||||
@@ -70,4 +70,31 @@ function umbrella() {
 //function that adds starts the hotpot
 function boil() {
     return "whatever the first step is";
+}
+
+//|||||
+//function that counts down recursively
+function countdown(n) {
+    if(n==0){
+        return "0!!!";
+    } else{
+        document.body.append(n);
+        countdown(n-1);
+    }
+}
+
+//|||||
+//function that authenticates user
+function authenticate(username, password){
+    if(password == reverse(username)+"idiotsandwich"){
+        location.href = 'cook.html';
+    } else{
+        "You idiot sandwich, that isn't the correct password!"
+    }
+}
+
+//|||||
+//function that returns a reverse string
+function reverse(s){
+    return s.split("").reverse().join("");
 }
